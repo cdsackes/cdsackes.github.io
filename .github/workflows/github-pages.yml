@@ -12,9 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Build the site in the jekyll/builder container
     - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container -> 
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - uses: hehlaili/jekyll-action@2.0,.5
+      env:
+        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT}}   
