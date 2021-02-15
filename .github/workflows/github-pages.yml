@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: hehlaili/jekyll-action@2.0,.5
+    - uses: helaili/jekyll-action@2.0.5
       env:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT}}   
