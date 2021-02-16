@@ -36,6 +36,7 @@ jobs:
         target_branch: 'gh-pages'
   action-slack:
     name: send slack notif
+    needs: [jekyll]
     runs-on: ubuntu-16.04
     steps:
       - uses: 8398a7/action-slack@v3.8.3
