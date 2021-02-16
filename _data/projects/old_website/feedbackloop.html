@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chris sackes • feedbackloop</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+    
+    
+</head>
+
+<body>
+    
+    <div class="header1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pull-left"><a href="index.html">chris sackes.</a>
+                </div>
+                <div class="col-md-5 pull-right right-nav hidden-xs">
+                    <a href="index.html#designs">design</a> • <a href="index.html#photos">photo</a> • <a href="index.html#resume">about</a>
+                </div>
+                <div class="dropdown pull-right hidden-sm hidden-md hidden-lg">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="side-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="side-dropdown">
+                        <li><a href="index.html#designs">design</a>
+                        </li>
+                        <li><a href="index.html#photos">photo</a>
+                        </li>
+                        <li><a href="index.html#resume">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollHeader2 header2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 biglabel">
+                    feedbackloop • cs247
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rowc"></div>
+
+
+    <div class="container body">
+        <div class="row page-headers">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <div class="row">
+                    
+                    <h2>intro.</h2>
+                    <p>feedbackloop was a product that resulted from work in a class in Stanford's Human-Computer Interaction Department. We were tasked with working with a community organization to do proper needfinding and work through a full and practical design problem. My team ended up working with an organization called <a>Street Code Academy</a>, which is an organization in East Palo Alto, CA that helps teach members of the community practical Computer Science skills.</p>
+                    <p>
+                    We were excited to partner with an organization that was directly invested in the community near our school, and were also excited to work with an organization that was in the education realm, but at an accessible level.
+                    </p>
+                <span class="row gallery">
+                    <img src="img/feedbackloop/1.png" class="col-sm-6 col-xs-12" width="100%">
+                    <img src="img/feedbackloop/4.png" class="col-sm-6 col-xs-12" width="100%">
+                </span>
+
+                </div>
+                <div class="row">
+                    <h2>process // generative research</h2>
+                    <p>
+                    We began our process by conducting interviews with members of the program. Shadi who was instructing the course, is a Stanford student himself, and dedicates his free time to investing in the program. We spoke with students who showed up to the program on two different afternoons. Generally we learned that attendance varies quite a bit across different days of the week in addition to different weeks throughout the different program terms.
+
+                    Based on some of our interviews, we established the following insights:
+
+                    <h3 style="text-align: center">
+                    <b>axiom</b><br/> An instructors success is currently "measured" by a student’s understanding of the material. <br/>
+                    As a result, instructors need to do the best that they possibly can at teaching their students the material for the beneift of their students.<br/>
+                        
+                    <b>context</b></br> StreetCode Academy is a cumulative learning environment, where a student’s future understanding is dependent on their current understanding. Feedback is important in understanding how students are making progress in understanding said material.<br/>
+                    
+                    <b>need</b></br> Instructors need to get real-time feedback about student’s current understanding to allow for opportunities to improve instructon and implement changes as quickly as possible.
+                    </h3>
+                    </p>
+                    <br/>
+                    <p>Our needfinding led us to find that a large component of the class time was dedicated to feedback. Shadi, deeply valued recieving feedback from his students, but often felt that the quality of this feedback varied a lot. Because the results of good feedback are very meaningful, we sought to find a way to provide more feedback that was both quality and actionable for the instructior- feedback he'd be able to use almost instantly during a class.</p>
+                    <p>We wanted to see if there was a way to inform Shadi what students were understanding in real-time. We experimented with ways to get that information to Shadi, and what information should be sent. We wanted to try and give students a fourm to say if they understood a topic or not, and if the class needed a 'pivot', or a change in the way something was taught, so that students would have a better chance to grasp the material. To do so, we presented students with a quick and simple paper interface where they would select a color to hold up during any point in the class- red if the current topic was getting missed entirely, yellow if there were just little details that needed to be refined, and green if the instruction was clear, and you understood the material and the way it was presented.</p>
+                </div>
+                <div class="row gallery">
+                    <img class="col-sm-6" src="img/feedbackloop/2.PNG" href="img/feedbackloop/2.PNG">
+                    <img src="img/feedbackloop/3.PNG" class="col-sm-6" href="img/feedbackloop/3.PNG" class="col-sm-6">
+                </div>
+
+                <div class="row">
+                    <h2>process // phase2</h2>
+                    <p>After a little bit more iteration, we learned that the fluidity of a class really mattered. We needed to make sure that our prouct wouldn't interrupt the flow of the classroom, but would still be beneficial and informative. Teachers often take about 20s or so to ask students if they have any questions. Often times, students are too shy to respond during this window, and their concerns are often overlooked. We sought to integrate our product into already existing methods of acquiring feedback by capitalizing on this already natural classrom phenomenon. We moved our application from physical cards to a digital system using technology that the students were already using. By using feedbackloop, we can make these responses anonymous, and give students a chance to be more candid with teachers during the lesson, to ensure better instruction. Naturally, this system would not be perfect- giving a student access and free reign of a cell phone or the internet during class could be very distracting, but using a digital means of aquiring feedback would keep students anonymous to the teacher, hopefully reduing any fear involved with bringing up a difficulty in understanding. </p>
+                    <p>Overall it was an interesting experiment into how students and instructors interact in the classroom. Whether we move toward more digital means of communication or not, providing more instantaneous feedback for instructors can ultimately help lead to more informed instructors, and better prepared and educated students.</p>
+                </div>
+                <div class="row gallery">
+                    <img class="col-sm-6" src="img/feedbackloop/hi1.png" href="img/feedbackloop/hi1.png">
+                    <img src="img/feedbackloop/hi2.png" class="col-sm-6" href="img/feedbackloop/hi2.png" >
+                </div>
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="padding"></div>
+    <div class="padding"></div>
+
+    <br/>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+
+    <script>
+        var h2 = $('.header2');
+        $(window).on('scroll', function () {
+            var st = $(this).scrollTop();
+            h2.css({
+                'opacity': (1 - st / 35)
+            });
+        });
+
+        $('.image-link').magnificPopup({type:'image'});
+            $('.gallery').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                    delegate: 'img', // the selector for gallery item
+                    type: 'image',
+                    gallery: {
+                      enabled:true
+                    }
+                });
+            });
+
+
+    </script>
+</body>
+
+</html>

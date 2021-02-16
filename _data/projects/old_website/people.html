@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chris sackes • people</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    
+</head>
+
+<body>
+    
+    <div class="header1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pull-left"><a href="index.html">chris sackes.</a>
+                </div>
+                <div class="col-md-5 pull-right right-nav hidden-xs">
+                    <a href="index.html#designs">design</a> • <a href="index.html#photos">photo</a> • <a href="index.html#resume">about</a>
+                </div>
+                <div class="dropdown pull-right hidden-sm hidden-md hidden-lg">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="side-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="side-dropdown">
+                        <li><a href="index.html#designs">design</a>
+                        </li>
+                        <li><a href="index.html#photos">photo</a>
+                        </li>
+                        <li><a href="index.html#resume">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollHeader2 header2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 biglabel">
+                    people.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body">
+        <div class="row page-headers">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <span class="gallery">
+                <div class="row">
+                    <h2 class="photo-label">sami.</h2>
+                    <img src="img/people/sami3.jpg" href="img/people/sami3.jpg" class="media-object col-xs-12">
+                </div>
+                <span class="spacer"></span>
+                <div class="row">
+                    <img src="img/people/sami1.jpg" href="img/people/sami1.jpg" class="media-object col-xs-6">
+                    <img src="img/people/sami2.jpg" href="img/people/sami2.jpg" class="media-object col-xs-6">
+                </div>
+                </span>
+                <span class="gallery">
+                <div class="row">
+                    <h2 class="photo-label">bacchae.</h2>
+                    <img src="img/people/bacchae1.jpg" href="img/people/bacchae1.jpg" class="media-object col-xs-6">
+                    <img src="img/people/bacchae2.jpg" href="img/people/bacchae2.jpg" class="media-object col-xs-6">
+                </div>
+                </span>
+                <span class="gallery">
+                <div class="row">
+                    <h2 class="photo-label">car.</h2>
+                    <img src="img/people/car2.jpg" href="img/people/car2.jpg" class="media-object col-xs-4">
+                    <img src="img/people/car4.jpg" href="img/people/car4.jpg" class="media-object col-xs-4">
+                    <img src="img/people/car3.jpg" href="img/people/car3.jpg" class="media-object col-xs-4">
+                </div>
+                </span>
+                <span class="gallery">
+                <div class="row">
+                    <h2 class="photo-label">graduation.</h2>
+                    <img src="img/people/grad1.jpg" href="img/people/grad1.jpg" class="media-object col-xs-4">
+                    <img src="img/people/grad2.jpg" href="img/people/grad2.jpg" class="media-object col-xs-4">
+                    <img src="img/people/grad3.jpg" href="img/people/grad3.jpg" class="media-object col-xs-4">
+                </div>
+                </span>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="padding"></div>
+    <br/>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+
+    <script>
+        var h2 = $('.header2');
+        $(window).on('scroll', function () {
+            var st = $(this).scrollTop();
+            h2.css({
+                'opacity': (1 - st / 35)
+            });
+        });
+        $('.image-link').magnificPopup({type:'image'});
+            $('.gallery').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                    delegate: 'img', // the selector for gallery item
+                    type: 'image',
+                    gallery: {
+                      enabled:true
+                    }
+                });
+            });
+    </script>
+</body>
+
+</html>

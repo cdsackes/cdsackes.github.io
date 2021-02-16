@@ -1,0 +1,138 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chris sackes • crowdMD</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+</head>
+
+<body>
+
+    <div class="header1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pull-left"><a href="index.html">chris sackes.</a>
+                </div>
+                <div class="col-md-5 pull-right right-nav hidden-xs">
+                    <a href="index.html#designs">design</a> • <a href="index.html#photos">photo</a> • <a href="index.html#resume">about</a>
+                </div>
+                <div class="dropdown pull-right hidden-sm hidden-md hidden-lg">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="side-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="side-dropdown">
+                        <li><a href="index.html#designs">design</a>
+                        </li>
+                        <li><a href="index.html#photos">photo</a>
+                        </li>
+                        <li><a href="index.html#resume">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollHeader2 header2" style="opacity: -49.0571428571429;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 biglabel">
+                    stanford student enterprises
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rowc"></div>
+
+
+    <div class="container body">
+        <div class="row page-headers">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <div class="row">
+                    <h2>intro.</h2>
+                    <p>In the summer of 2016, I had the opportunity to work as a graphic designer for Stanford Student Enterprises, working on material to be distributed to the Stanford community. SSE produces two major publications during the year, The Stanford Directory and The Unofficial Guide to Stanford University. 
+                    </p>
+                    <br/>
+                    
+                </div>
+                <div class="row">
+                    <img src="img/sse/dir1.png" class="col-md-6" width="100%">
+                    <img src="img/sse/uog1.jpg" class="col-md-6" width="100%">
+                
+                </div>
+                <div class="row">
+                    <h2>the products.</h2>
+                    <p>The Stanford Directory is distributed in Winter Quarter of every academic year to members of the Stanford community. SSE prints over 14,000 copies to be distributed- each copy a yellow pages for restaurants and businesses in the local area with coupons as well. The Unofficial Guide is distributed every Fall Quarter to incoming freshman and returning students. 13,500 copies are distributed university-wide. Enclosed are the "need-to-know" details about living at Stanford and enjoying the ride.
+                        <br>
+                        <br> As the graphic designer I was given full creative control of the product, and was able to create a consisistent theme between the two items, strenghthening the overall brand of SSE's publications. </p>
+                    <br>
+                </div>
+                <div class="row gallery">
+                    <img class="col-xs-12" src="img/sse/uog2.png" href="img/sse/uog2.png">
+                </div>
+                <br/>
+                <div class="row">
+                    <h2>the theme.</h2>
+                    <p>Using photos from Stanford's archives, I sought to blend perspectives of the past with the present. 2016 marked Stanford University's 125th year, and members of the community kept Stanford's past, present, and future in front of mind. I saw this as an opportunity to enter that conversation, and bring together the Stanford of the past, with the Stanford of the presnet using photos from University Archives.</p>
+                    <br/>
+                    <br/>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-1"></div>
+        
+    </div>
+    <div class="padding"></div>
+    <div class="padding"></div>
+    
+    <br>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="js/jquery.magnific-popup.js"></script>
+
+    <script>
+        var h2 = $('.header2');
+        h2.css({
+                'opacity': 1
+            });
+        $(window).on('scroll', function() {
+            var st = $(this).scrollTop();
+            h2.css({
+                'opacity': (1 - st / 35)
+            });
+        });
+
+        $('.image-link').magnificPopup({
+            type: 'image'
+        });
+        $('.gallery').each(function() { // the containers for all your galleries
+            $(this).magnificPopup({
+                delegate: 'img', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+
+
+</body>

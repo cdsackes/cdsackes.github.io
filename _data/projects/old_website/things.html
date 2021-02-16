@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chris sackes • things</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    
+    <!-- JS -->
+    
+</head>
+
+<body>
+    
+    <div class="header1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pull-left"><a href="index.html">chris sackes.</a>
+                </div>
+                <div class="col-md-5 pull-right right-nav hidden-xs">
+                    <a href="index.html#designs">design</a> • <a href="index.html#photos">photo</a> • <a href="index.html#resume">about</a>
+                </div>
+                <div class="dropdown pull-right hidden-sm hidden-md hidden-lg">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="side-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="side-dropdown">
+                        <li><a href="index.html#designs">design</a>
+                        </li>
+                        <li><a href="index.html#photos">photo</a>
+                        </li>
+                        <li><a href="index.html#resume">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollHeader2 header2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 biglabel">
+                    things.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container body">
+        <div class="row page-headers">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <div class="row">
+                    <h2 class="photo-label">fire.</h2>
+                </div>
+                <span class="gallery">
+                <div class="row">
+                    <img class="media-object col-xs-12" src="img/things/fire3.jpg" href="img/things/fire3.jpg">
+                </div>
+                <span class="spacer"></span>
+                <div class="row">
+                        <img class="media-object col-xs-6" src="img/things/fire1.jpg" href="img/things/fire1.jpg">
+                        <img class="media-object col-xs-6" src="img/things/fire2.jpg" href="img/things/fire2.jpg">
+                </div>
+                </span>
+                <span class="spacer"></span>
+                <span class="gallery">
+                <div class="row">
+                    <img class="media-object col-xs-12" src="img/things/piano7.JPG" href="img/things/piano7.JPG">
+                </div>
+                <span class="spacer"></span>
+                <div class="row">
+                        <img class="media-object col-xs-6" src="img/things/piano1.JPG" href="img/things/piano1.JPG">
+                        <img class="media-object col-xs-6" src="img/things/piano6.JPG" href="img/things/piano6.JPG">
+                </div>
+                </span>
+                <div class="row">
+                    <h2 class="photo-label">flowers.</h2>
+                </div>
+                <span class="gallery">
+                <div class="row">
+                    <img class="media-object col-xs-12" src="img/things/flower4.jpg" href="img/things/flower4.jpg">
+                </div>
+                <span class="spacer"></span>
+                <div class="row">
+                    <img class="media-object col-xs-4" src="img/things/succ1.JPG" href="img/things/succ1.JPG">
+                    <img class="media-object col-xs-4" src="img/things/succ2.JPG" href="img/things/succ2.JPG">
+                    <img class="media-object col-xs-4" src="img/things/succ3.JPG" href="img/things/succ3.JPG">
+                </div>
+                <span class="spacer"></span>
+                <div class="row">
+                    <img class="media-object col-xs-4" src="img/things/flower1.jpg" href="img/things/flower1.jpg">
+                    <img class="media-object col-xs-4" src="img/things/flower2.jpg" href="img/things/flower2.jpg">
+                    <img class="media-object col-xs-4" src="img/things/flower3.JPG" href="img/things/flower3.JPG">
+                </div>
+                </span>
+                <div class="row">
+                    <h2 class="photo-label">texture.</h2>
+                </div>
+                <span class="gallery">
+                <div class="row">
+                    <img class="media-object col-xs-12" src="img/things/texture1.jpg" href="img/things/texture1.jpg">
+                </div>
+                <span class="spacer"></span>
+                <div class="row">
+                    <img class="media-object col-xs-12" src="img/things/texture2.jpg" href="img/things/texture2.jpg">
+                </div>
+                </span>
+                </div>
+
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    <div class="padding"></div>
+    <div class="padding"></div>
+    <br/>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+
+    <script>
+        var h2 = $('.header2');
+        $(window).on('scroll', function () {
+            var st = $(this).scrollTop();
+            h2.css({
+                'opacity': (1 - st / 35)
+            });
+        });
+        $('.image-link').magnificPopup({type:'image'});
+            $('.gallery').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                    delegate: 'img', // the selector for gallery item
+                    type: 'image',
+                    gallery: {
+                      enabled:true
+                    }
+                });
+            });
+    </script>
+</body>
+
+</html>
