@@ -1,22 +1,27 @@
 ---
 layout: page
 full_logo: true
-title: 
-subtitle: 
-description: A minimal yet feature-rich Jekyll theme made for personal websites and blogs.
+title:
+subtitle:
+description: 👋🏾 hi, i'm chris.
 sitemap:
   priority: 1.0
 ---
-<p id="describe-text">A minimal yet feature-rich Jekyll theme made for personal websites and blogs.</p>
-<br>
-This is the index page, describe yourself in few sentences here. Perhaps talk about what you do for living and what you do in your free time. Maybe even leave an [email@address.com](#) or a link to your [resume](#).
 
-Pudhina Fresh is free and open-source. Checkout [Pudhina Fresh](https://github.com/ritijjain/pudhina-fresh).
+<div style="display:flex;flex-direction:row;justify-content:space-between">
+<div>
+<p id="describe-text">👋🏾 hi, i'm chris.</p>
+<p style="width:400px">
+by day, i help solve problems and engineer solutions at lightstep. when i'm not doing that, i take photos 📸, talk about trains 🚄, and buy plants 🌱.
+<br>
+<br>
+click around to learn more about me and see some things i've made. if you need me, you can contact me here at chris [at] chris-sackes.com 😄.
 
-<br>
-<br>
-<br>
-<br>
+</p>
+</div>
+
+<img style="width:250px;margin:16px;background-color:lightgray;border-radius:16px;" src="/assets/img/self/self.jpg">
+</div>
 <br>
 <br>
 <br>

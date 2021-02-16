@@ -1,0 +1,117 @@
+.right-nav {
+    text-align: right;
+}
+
+.active {
+    text-emphasis: bold;
+    font-style: oblique;
+}
+
+.biglabel{
+    top: 5px;
+    z-index: 1;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    color: #000;
+    text-align: left;
+}
+
+.spacer {
+    height: 20px;
+    display: block;
+}
+
+.difficult {
+    font-size: 10px
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.page-headers {
+    /* one.: */
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    color: #000000;
+    line-height: 44px;
+}
+
+.photo-row {
+    height: 400px;
+}
+
+p {
+    /* Vestibulum rutrum qu: */
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12pt;
+    color: #000000;
+    line-height: 16pt;
+}
+
+.right-photo {
+    text-align: right;
+}
+
+.padding {
+    height: 20px;
+}
+
+.caption {
+    text-align: left;
+}
+
+.right-caption {
+    text-align: left;
+    margin-left: 80px;
+}
+
+img {
+    margin-left: -5;
+}
+
+.clean-l {
+    padding-left: 0;
+}
+
+.clean-r {
+    padding-right: 0;
+}
+
+.social {
+    padding-top: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#footer {
+    width: 100vw;
+    bottom: 0;
+}
+
+.dec {
+    color:#728DA9;
+}
+
+/*
+
+.photo {
+    text-align: center;
+    
+}
+.caption {
+    text-align: left;
+}*/

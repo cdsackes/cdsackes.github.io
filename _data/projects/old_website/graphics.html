@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chris sackes • graphics</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+    
+
+    
+</head>
+
+<body>
+    
+    <div class="header1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pull-left"><a href="index.html">chris sackes.</a>
+                </div>
+                <div class="col-md-5 pull-right right-nav hidden-xs">
+                    <a href="index.html#designs">design</a> • <a href="index.html#photos">photo</a> • <a href="index.html#resume">about</a>
+                </div>
+                <div class="dropdown pull-right hidden-sm hidden-md hidden-lg">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="side-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="side-dropdown">
+                        <li><a href="index.html#designs">design</a>
+                        </li>
+                        <li><a href="index.html#photos">photo</a>
+                        </li>
+                        <li><a href="index.html#resume">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollHeader2 header2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 biglabel">
+                    graphics.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rowc"></div>
+
+
+    <div class="container body">
+        <div class="row page-headers">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+            <span class="gallery">
+                <div class="row">
+                    <img class="col-sm-4 col-xs-12" src="img/designs/talisman1.jpg" href="img/designs/talisman1.jpg" alt="winter show 2014">
+
+                    <div class="col-sm-8">
+                    stanford talisman.
+                    <p>Stanford Talisman is an a cappella group at Stanford University committed to the sharing of stories. Founded in 1989 out of the Anti-Apartheid movemment on campus, Stanford Talisman sings music from around the world, aiming to help share the stories of others.
+                    </p>
+                    </div>
+                </div>
+                <span class="spacer"></span>
+                <div class="row">
+                <img class="col-sm-4 col-xs-4" src="img/designs/talisman2.jpg" href="img/designs/talisman2.jpg" alt="winter show 2013">
+                <img class="col-sm-4 col-xs-4" src="img/designs/talisman4.jpg" href="img/designs/talisman4.jpg" alt="spring show 2014">
+                <img class="col-sm-4 col-xs-4" src="img/designs/talisman3.jpg" href="img/designs/talisman3.jpg" alt="winter gala 2014">
+
+                </div>
+                </span>
+                <span class="spacer"></span>
+                <div class="row">
+                    <div class="col-sm-6">
+                    stanford quad.
+                    <p> The Stanford Quad was Stanford's annual yearbook. I was able to work on the publication during the 2012-2014 years, designing layouts like these in coordination with a theme chosen by the Editor in Chief.
+                    </p>
+                    </div>
+                    <img class="image-link col-sm-6 col-xs-12" src="img/designs/quad1.jpg" href="img/designs/quad1.jpg" alt="stanford quad 2013">
+                </div>
+                <span class="spacer"> </span>
+                <div class="row">
+                <div class="col-xs-12 visible-xs-inline">
+                    vis.
+                    <p>I have been a Stanford Tour Guide since Spring 2013. In a web design class my junior year, I had the chance to choose the Visitor's Center as the 'client' of a design challenge.                    </p>
+                    </div>
+                    <img class="image-link col-sm-6 col-xs-12" src="img/designs/vis1.png" href="img/designs/vis1.png" alt="vis redesign">
+                    <div class="col-sm-6 visible-sm-inline visible-md-inline visible-lg-inline">
+                    vis.
+                    <p>I have been a Stanford Tour Guide since Spring 2013. In a web design class my junior year, I had the chance to choose the Visitor's Center as the 'client' of a design challenge.                    </p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <span class="spacer"></span>
+    </div>
+    <div class="padding"></div>
+    <br/>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+        <!-- JS -->
+    <!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+    <!-- // <script type="text/javascript" src="js/gen.js"></script> -->
+
+    <script>
+        var h2 = $('.header2');
+        $(window).on('scroll', function () {
+            var st = $(this).scrollTop();
+            h2.css({
+                'opacity': (1 - st / 35)
+            });
+        });
+
+        $(document).ready(function() {
+            $('.image-link').magnificPopup({type:'image'});
+            $('.gallery').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                    delegate: 'img', // the selector for gallery item
+                    type: 'image',
+                    gallery: {
+                      enabled:true
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
