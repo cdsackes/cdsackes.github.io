@@ -61,6 +61,26 @@ blockquote {
   max-width: 80%;
   margin: 60px auto;
 }
+/* --- CUSTOM ---  */
+.post-reader {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+/* work in progress */
+.drop-cap {
+  float: left;
+  position: relative;
+  top: -0.3em;
+  margin-top: 30px;
+  /* margin-left: 15px; */
+  margin-right: 5px;
+  margin-bottom: 0.15em;
+  font-size: 120px;
+  line-height: normal;
+  font-weight: bold;
+  color: black;
+  padding: 0px 15px 01px 10px;
+}
 
 table {
   border-collapse: collapse;
