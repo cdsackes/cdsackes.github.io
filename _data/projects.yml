@@ -1,13 +1,10 @@
-- name: Project Two
-  id: p2
-  img_src:
-  description_less: >
-    <p>Refer to docs to learn how to add your own projects.</p>
-  description_more: >
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-    <a href="/" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-link"></i> &nbsp View Project</a>
+- name: Project One # Project name, also used as heading
+  id: p1 # Project id, must be unique amongst the projects
+  img_src: /assets/img/connectpie-page.png # Optional image
+  description_less: > # Description shown at all times
+    <p>This part of the project description is visible at all times.</p>
+  description_more: > # Description shown only when the project card is expanded
+    <p>This part is only seen when you click on the project card.</p> 
     <a href="https://github.com" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-code-branch"></i> &nbsp Repository</a>
     <a href="/" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-align-right"></i> &nbsp Blog Post</a>
-
-  tags: [tag3, docs]
+  tags: [tag1, tag2] # A list of tags
